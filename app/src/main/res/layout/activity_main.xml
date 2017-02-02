@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.spiriev.android.schoolcontactinfo.MainActivity">
+
+    <ImageButton
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/dobri_hristov_national_art_school_1"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="64dp"
+        android:onClick="openImageDialog"/>
+</RelativeLayout>
