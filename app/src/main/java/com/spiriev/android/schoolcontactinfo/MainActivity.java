@@ -2,9 +2,12 @@ package com.spiriev.android.schoolcontactinfo;
 
 import android.app.DialogFragment;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,6 +15,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextView text = (TextView) findViewById(R.id.dobri_hristov_text_id);
+        Button buttonText = (Button) findViewById(R.id.gallery_button_id);
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "AmaticSC-Regular.ttf");
+        text.setTypeface(typeface);
+        buttonText.setTypeface(typeface);
     }
 
     /**

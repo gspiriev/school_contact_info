@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">School Contact Info</string>
+    <string name="dobri_hristov">Dobri Hristov</string>
+    <string name="art_school">National Art School</string>
+    <string name="gallery_text">Gallery</string>
+    <string name="location_text"><u>Bulgaria, Varna, 34 St. Karadja st.</u></string>
 </resources>

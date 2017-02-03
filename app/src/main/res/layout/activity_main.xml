@@ -1,17 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#871F08"
+    android:orientation="vertical"
     tools:context="com.spiriev.android.schoolcontactinfo.MainActivity">
 
-    <ImageButton
-        android:layout_width="128dp"
-        android:layout_height="128dp"
-        android:src="@drawable/dobri_hristov_national_art_school_1"
-        android:scaleType="centerCrop"
-        android:layout_centerInParent="true"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="64dp"
-        android:onClick="openImageDialog"/>
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dobri_hristov" />
+
+        <TextView
+            android:id="@+id/dobri_hristov_text_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="104dp"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="@string/dobri_hristov"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dobri_hristov_text_id"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif"
+            android:text="@string/art_school"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/light_orange">
+
+        <ImageView
+            android:id="@+id/place_icon_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/ic_place_black_24dp"
+            android:tint="#871F08" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="36dp"
+            android:layout_toRightOf="@id/place_icon_id"
+            android:fontFamily="sans-serif"
+            android:text="@string/location_text"
+            android:textColor="#871F08" />
+
+        <Button
+            android:id="@+id/gallery_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="32dp"
+            android:background="#871F08"
+            android:onClick="openImageDialog"
+            android:text="@string/gallery_text"
+            android:textSize="32sp" />
+    </RelativeLayout>
+
+</LinearLayout>

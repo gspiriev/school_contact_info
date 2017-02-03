@@ -5,8 +5,8 @@
 
     <ImageView
         android:id="@+id/image_view_id"
-        android:scaleType="centerCrop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop" />
 </RelativeLayout>
