@@ -16,15 +16,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView text = (TextView) findViewById(R.id.dobri_hristov_text_id);
+        TextView dobriHristovText = (TextView) findViewById(R.id.dobri_hristov_text_id);
         Button buttonText = (Button) findViewById(R.id.gallery_button_id);
         Typeface typeface = Typeface.createFromAsset(getAssets(), "AmaticSC-Regular.ttf");
-        text.setTypeface(typeface);
+
+        dobriHristovText.setTypeface(typeface);
         buttonText.setTypeface(typeface);
+
     }
 
     /**
      * Callback method which opens the image preview dialog
+     *
      * @param view The ImageButton on the main activity
      */
     public void openImageDialog(View view) {
@@ -34,12 +37,13 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Callback method which starts the gallery activity
+     *
      * @param view ImageButton in the image preview dialog
      */
     public void openGallery(View view) {
         //this part is a bit ugly but it works
         int position = 0;
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.image_1:
                 position = 0;
                 break;

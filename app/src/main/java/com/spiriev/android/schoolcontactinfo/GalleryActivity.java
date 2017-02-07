@@ -14,6 +14,7 @@ public class GalleryActivity extends AppCompatActivity {
 
     /**
      * Sets the content view, swipe adapter and current item for the gallery activity
+     *
      * @param savedInstanceState
      */
     @Override

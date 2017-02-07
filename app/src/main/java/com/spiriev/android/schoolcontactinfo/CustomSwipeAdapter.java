@@ -14,8 +14,8 @@ import android.widget.RelativeLayout;
 public class CustomSwipeAdapter extends PagerAdapter {
 
     private int[] imageResources = {R.drawable.dobri_hristov_national_art_school_1, R.drawable.dobri_hristov_national_art_school_2,
-                                    R.drawable.dobri_hristov_national_art_school_3, R.drawable.dobri_hristov_national_art_school_4,
-                                    R.drawable.dobri_hristov_national_art_school_5};
+            R.drawable.dobri_hristov_national_art_school_3, R.drawable.dobri_hristov_national_art_school_4,
+            R.drawable.dobri_hristov_national_art_school_5};
     private LayoutInflater inflater;
     private Context ctx;
 
@@ -26,6 +26,7 @@ public class CustomSwipeAdapter extends PagerAdapter {
     /**
      * Checks if the page view is associated with the object returned from
      * instantiateItem(ViewGroup container, int position)
+     *
      * @param view
      * @param object
      * @return
@@ -43,8 +44,9 @@ public class CustomSwipeAdapter extends PagerAdapter {
     /**
      * Inflates the swipe adapter layout, sets image resource and adds the
      * inflated view to the ViewGroup
+     *
      * @param container
-     * @param position Position from which the image rendering should happen
+     * @param position  Position from which the image rendering should happen
      * @return
      */
     @Override
@@ -59,6 +61,7 @@ public class CustomSwipeAdapter extends PagerAdapter {
 
     /**
      * Removes current view when sliding to the next one
+     *
      * @param container
      * @param position
      * @param object
