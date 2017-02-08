@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#871F08"
+    android:layout_width="@dimen/match_parent"
+    android:layout_height="@dimen/match_parent"
+    android:background="@color/colorCustomSecondary"
     android:orientation="vertical"
     tools:context="com.spiriev.android.schoolcontactinfo.MainActivity">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="@dimen/match_parent"
+        android:layout_height="@dimen/weight_usage_case"
         android:layout_marginBottom="8dp"
         android:layout_weight="1">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="@dimen/match_parent"
+            android:layout_height="@dimen/match_parent"
             android:layout_alignParentTop="true"
             android:scaleType="centerCrop"
             android:src="@drawable/dobri_hristov" />
 
         <TextView
-            style="@style/DobriHristovTextStyle"
             android:id="@+id/dobri_hristov_text_id"
-            android:text="@string/dobri_hristov"/>
+            style="@style/DobriHristovTextStyle"
+            android:text="@string/dobri_hristov" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/wrap_content"
+            android:layout_height="@dimen/wrap_content"
             android:layout_below="@id/dobri_hristov_text_id"
             android:layout_centerInParent="true"
             android:fontFamily="sans-serif"
@@ -36,71 +36,71 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="@dimen/match_parent"
+        android:layout_height="@dimen/weight_usage_case"
         android:layout_weight="1"
         android:background="@color/light_orange"
         android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
+            android:layout_width="@dimen/wrap_content"
+            android:layout_height="@dimen/weight_usage_case"
             android:layout_margin="@dimen/activity_vertical_margin"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <ImageView
                 style="@style/MainIconsStyle"
-                android:src="@drawable/ic_place_black_24dp"/>
+                android:src="@drawable/ic_place_black_24dp" />
 
             <TextView
-                style="@style/MainActivityTextStyle"
                 android:id="@+id/location_text_id"
-                android:text="@string/location_text"/>
+                style="@style/MainActivityTextStyle"
+                android:text="@string/location_text" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
+            android:layout_width="@dimen/wrap_content"
+            android:layout_height="@dimen/weight_usage_case"
             android:layout_margin="@dimen/activity_vertical_margin"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <ImageView
                 style="@style/MainIconsStyle"
-                android:src="@drawable/ic_phone_black_24dp"/>
+                android:src="@drawable/ic_phone_black_24dp" />
 
             <TextView
-                style="@style/MainActivityTextStyle"
                 android:id="@+id/phone_text_id"
-                android:text="@string/phone_text"/>
+                style="@style/MainActivityTextStyle"
+                android:text="@string/phone_text" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
+            android:layout_width="@dimen/wrap_content"
+            android:layout_height="@dimen/weight_usage_case"
             android:layout_margin="@dimen/activity_vertical_margin"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <ImageView
                 style="@style/MainIconsStyle"
-                android:src="@drawable/ic_email_black_24dp"/>
+                android:src="@drawable/ic_email_black_24dp" />
 
             <TextView
-                style="@style/MainActivityTextStyle"
                 android:id="@+id/email_text_id"
-                android:text="@string/email_text"/>
+                style="@style/MainActivityTextStyle"
+                android:text="@string/email_text" />
         </LinearLayout>
 
         <Button
             android:id="@+id/gallery_button_id"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
+            android:layout_width="@dimen/wrap_content"
+            android:layout_height="@dimen/weight_usage_case"
             android:layout_gravity="right"
             android:layout_margin="@dimen/button_margin"
             android:layout_weight="1"
-            android:background="#871F08"
+            android:background="@color/colorCustomSecondary"
             android:onClick="openImageDialog"
             android:text="@string/gallery_text"
             android:textSize="@dimen/button_text_size" />
